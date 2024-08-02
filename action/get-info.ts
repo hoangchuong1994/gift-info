@@ -17,6 +17,6 @@ export async function GetInfo(values: z.infer<typeof InfoGirl>) {
         return { success: true };
     } catch (error) {
         console.error(error);
-        return { error: 'Internal server error' };
+        return { error: error };
     } 
 }
