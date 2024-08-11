@@ -42,14 +42,9 @@ const Info = () => {
             <div className="notification flex-1">
                 <div className="notiglow"></div>
                 <div className="notiborderglow"></div>
-                <div className="notititle">Chào Thân Ái</div>
+                <div className="notititle">Chào Em </div>
                 <div className="notibody font-mono text-sm text-white">
-                    Anh đã thử nghĩ ra mọi cách để bắt chuyện với em, nhưng chắc
-                    là anh không quen với lời nói ngọt ngào. Nên anh quyết định
-                    viết những dòng này gửi đến em. Tình cờ thấy em, anh thật sự
-                    bị cuốn hút bởi nụ cười dể thương của em có đôi lúc anh nghĩ
-                    về em thật sự Anh rất muốn làm quen với em và hy vọng em
-                    cũng cảm thấy như vậy
+                    Anh tên Chương. Được Gặp e mấy lần mà a có cảm tình với e rồi. Anh thấy em xinh đẹp với dễ thương nên thật sự rất muốn làm quen, nếu e không thấy phiền thì cho anh xin số mình làm quen e hấy =). A hy vọng được kết bạn cùng e. Cảm ơn e đã đọc những dòng này, a sẽ rất vui nếu nhận được phản hồi từ e. Chúc e một ngày tốt lành!
                 </div>
             </div>
 
