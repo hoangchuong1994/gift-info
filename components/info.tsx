@@ -44,7 +44,7 @@ const Info = () => {
                 <div className="notiborderglow"></div>
                 <div className="notititle">Chào Em </div>
                 <div className="notibody font-mono text-sm text-white">
-                    Anh tên Chương. Được Gặp e mấy lần mà a có cảm tình với e rồi. Anh thấy em xinh đẹp với dễ thương nên thật sự rất muốn làm quen, nếu e không thấy phiền thì cho anh xin số mình làm quen e hấy =). A hy vọng được kết bạn cùng e. Cảm ơn e đã đọc những dòng này, a sẽ rất vui nếu nhận được phản hồi từ e. Chúc e một ngày tốt lành!
+                    Anh tên Chương. Được Gặp e mấy lần mà a có cảm tình với e rồi. Cho anh xin số mình làm quen em hấy. A hy vọng được kết bạn cùng e. Chúc e một ngày tốt lành!
                 </div>
             </div>
 
