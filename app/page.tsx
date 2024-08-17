@@ -27,7 +27,7 @@ const HomePage = () => {
     return (
         <div className="h-svh w-full">
              {wife ? (
-                <div className="relative h-full w-full p-10">
+                <div className="relative h-full w-full p-4">
                     {showFormInfo ? (
                        <Info />
                     ) : (
