@@ -31,9 +31,7 @@ const HomePage = () => {
                     {showFormInfo ? (
                        <Info />
                     ) : (
-                        <div>
-                            {!showUpdateInfo ? (
-                                <div className="card-style-wife h-full w-full rounded-lg">
+                        <div className="card-style-wife h-full w-full rounded-lg">
                                 <div className="flex flex-1 flex-col items-center justify-center">
                                     <div className="form__group field">
                                         <input
@@ -63,8 +61,6 @@ const HomePage = () => {
                                     </button>
                                 </div>
                             </div>
-                            ) : <Description />}
-                        </div>
                     )}
                 </div>
             ) : (
