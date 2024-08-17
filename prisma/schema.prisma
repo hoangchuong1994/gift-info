@@ -16,4 +16,11 @@ model Cte {
 }
 
 
+model Description {
+  id                String        @id @default(cuid())
+  decription        String
+ 
+}
+
+
 

@@ -3,20 +3,23 @@ import ToggleWife from '@/components/toggle-wife';
 import Info from '@/components/info';
 import React, { useState } from 'react';
 import ButtonPrimary from '@/components/button-primary';
+import Description from '@/components/description';
 
 const HomePage = () => {
-    const [bypassPhone, setByPassPhone] = useState(false);
     const [wife, setWife] = useState(false);
-    const [error, setError] = useState('');
+    const [bypassPhone, setByPassPhone] = useState(false);
     const [showFormInfo, setShowFormInfo] = useState(false);
-
-    const showFormWife = () => {
-        setWife(true);
-    };
+    const [showUpdateInfo, setShowUpdateInfo] = useState(false);
+    const [title, setTitle] = useState('');
+    const [error, setError] = useState('');
 
     const handleSubmit = () => {
         if (!bypassPhone) {
-            setError('Mật Khẩu Chưa Chính Xác. Vui Lòng Thử lại !');
+            if(title === "chuong") {
+                setShowUpdateInfo(true)
+            }else {
+                setError('Mật Khẩu Chưa Chính Xác. Vui Lòng Thử lại !');
+            }
         } else {
             setShowFormInfo(true);
         }
@@ -24,20 +27,20 @@ const HomePage = () => {
     return (
         <div className="h-svh w-full">
              {wife ? (
-                <div className="relative h-full w-full">
+                <div className="relative h-full w-full p-10">
                     {showFormInfo ? (
-                        <div className="h-full w-full bg-slate-300 p-4">
-                            <Info />
-                        </div>
+                       <Info />
                     ) : (
-                        <div className="absolute inset-0 h-full w-full bg-slate-950 p-10">
-                            <div className="card-style-wife h-full w-full rounded-lg">
+                        <div>
+                            {!showUpdateInfo ? (
+                                <div className="card-style-wife h-full w-full rounded-lg">
                                 <div className="flex flex-1 flex-col items-center justify-center">
                                     <div className="form__group field">
                                         <input
                                             type="password"
                                             className="form__field"
                                             placeholder="Wife Password"
+                                            onChange={(e) => {setTitle(e.target.value)}}
                                         />
                                         <label
                                             htmlFor="name"
@@ -60,6 +63,7 @@ const HomePage = () => {
                                     </button>
                                 </div>
                             </div>
+                            ) : <Description />}
                         </div>
                     )}
                 </div>
@@ -85,7 +89,7 @@ const HomePage = () => {
                         <div className="brutalist-card__actions">
                             <button
                                 className="brutalist-card__button brutalist-card__button--mark"
-                                onClick={showFormWife}
+                                onClick={() => setWife(true)}
                             >
                                 Okay
                             </button>

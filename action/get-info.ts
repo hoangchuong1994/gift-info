@@ -20,3 +20,14 @@ export async function GetInfo(values: z.infer<typeof InfoGirl>) {
         return { error: error };
     } 
 }
+
+export async function updateDescription() {
+    try {
+        await prisma.description.findFirst({
+        });
+        return { success: true };
+    } catch (error) {
+        console.error(error);
+        return { error: error };
+    } 
+}
