@@ -39,6 +39,12 @@ const HomePage = () => {
                                             className="form__field"
                                             placeholder="Wife Password"
                                             onChange={(e) => {setTitle(e.target.value)}}
+                                            inputMode="numeric"
+                                            onKeyDown={(e) => {
+                                                if (!/[0-9]/.test(e.key) && !['Backspace', 'Tab', 'ArrowLeft', 'ArrowRight'].includes(e.key)) {
+                                                    e.preventDefault();
+                                                }
+                                            }}
                                         />
                                         <label
                                             htmlFor="name"
