@@ -42,9 +42,9 @@ const Info = () => {
             <div className="notification flex-1">
                 <div className="notiglow"></div>
                 <div className="notiborderglow"></div>
-                <div className="notititle">Chào Su </div>
-                <div className="notibody font-mono text-sm text-white overflow-auto">
-                Anh tên là Chương. Mấy lần được gặp em, anh cảm thấy rất ấn tượng và có cảm tình với em. Anh thật lòng muốn được làm quen và hy vọng rằng em sẽ không thấy phiền. Nếu em đồng ý, anh rất mong có cơ hội được tìm hiểu thêm về em. Chúc em một ngày thật vui vẻ!
+                <div className="notititle">Hello Su</div>
+                <div className="notibody font-serif text-sm text-white overflow-auto">
+                    Gặp su mấy lần, anh có cảm tình và thật lòng muống làm quen em .Su cho anh xin số của em đi, lúc nào rãnh rũ em đi chơi được không 
                 </div>
             </div>
 
